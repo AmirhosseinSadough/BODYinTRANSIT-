@@ -133,14 +133,3 @@ if __name__ == "__main__":
 
     output = model(x, xc)
     print("Output shape:", output.shape)  # Should be [32, 3] for 3 classes
-    
-
-
-# model = mahcross_n(num_sensors=69, d_model=256, num_heads=8, num_layers=2, num_classes=3, rnn_hidden_size=128, dropout_prob=0.1)
-
-# # Load checkpoint
-# checkpoint = torch.load('checkpoint_f1_0.4406_epoch_66.pth', map_location='cpu')
-# model.load_state_dict(checkpoint['model_state_dict'])  # or checkpoint['state_dict'] depending on how it's saved
-
-# # Print architecture
-# # print(model)
